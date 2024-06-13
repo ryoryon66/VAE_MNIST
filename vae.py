@@ -1,8 +1,5 @@
-from ast import Tuple
-from matplotlib import axis
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 
 
 class VAE(nn.Module):
@@ -48,7 +45,7 @@ class VAE(nn.Module):
 
     def loss(self, x: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
         """
-        
+
 
         Args:
             x (torch.Tensor): input data
